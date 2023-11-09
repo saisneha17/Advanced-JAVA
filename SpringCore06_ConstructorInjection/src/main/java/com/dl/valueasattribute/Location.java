@@ -1,4 +1,4 @@
-package com.dl.valueaselement;
+package com.dl.valueasattribute;
 
 public class Location {
 

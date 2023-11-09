@@ -7,16 +7,10 @@
       http://www.springframework.org/schema/context
       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<bean name="student" class="com.dl.valueaselement.Student">
-		<constructor-arg><value>105</value></constructor-arg>
-		<constructor-arg><value>CSE</value></constructor-arg>
-		<constructor-arg><value>JNTU</value></constructor-arg>
-	</bean>
-	
-	<bean id="location" class="com.dl.valueaselement.Location">
-		<constructor-arg ><value>Hyd</value></constructor-arg>
-		<constructor-arg ><value>TG</value></constructor-arg>
-		<constructor-arg><ref bean="student"></ref></constructor-arg>
+	<bean name="student" class="com.dl.ambiguities.Student">
+		<constructor-arg value="201" type="int" name="rollno" index="0"></constructor-arg>
+		<constructor-arg value="2000.00" type="double" name="stipend" index="1"></constructor-arg>
+		<constructor-arg value="JNTU" type="String" name="university" index="2"></constructor-arg>
 	</bean>
 	
 </beans>
